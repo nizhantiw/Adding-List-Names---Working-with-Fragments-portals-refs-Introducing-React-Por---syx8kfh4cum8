@@ -2,6 +2,14 @@ import React , {useState,useEffect} from 'react'
 import '../styles/App.css';
 import List from "./List";
 const App = () => {
+  const[val setValue] = useState("");
+  const[list setList] = useState([]);
+  const changehandler = (event) => {
+    setValue(event.target.value);
+  }
+  const addhandler = () => {
+    setList({...list, val]);
+  }
   //code here
   return (
     <div id="main">
